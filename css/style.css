@@ -1,0 +1,118 @@
+/* Default styles for the root */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Setup default fonts */
+  font-family: "Kantumruy Pro", sans-serif;
+
+  /* Setup default width and height */
+  width: 100%;
+  height: 100vh;
+
+  /* Setup default display postion */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Setup default color for backgroup and text */
+  color: #000;
+  background: #f4f4f4;
+}
+
+.bg-image {
+  /* Inherit the width and height from the parent */
+  width: 100%;
+  height: 100%;
+
+  /* Setup image and related properties of image */
+  background-image: url("../assets/image/khmer-flag.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.container {
+  /* Setup the widht and padding */
+  width: 65%;
+  padding: 2rem 3rem;
+
+  /* Setup the color for the background and opacity */
+  background-color: rgba(255, 255, 255, 0.7);
+
+  /* Setup the border with the radius and shadow */
+  border-radius: 20px;
+  box-shadow: 0 8px 24px #0001;
+
+  /* Setup the container to positions into the absolute */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  /* Align the text inside this container to be centered */
+  text-align: center;
+}
+
+.container > h1 {
+  /* Customize the font size */
+  font-size: 72px;
+
+  /* Add-ons more on margin */
+  margin-bottom: 40px;
+}
+
+.container > button {
+  /* Add-ons more on padding */
+  padding: 12px 28px;
+
+  /* Turn off the border style */
+  border: none;
+
+  /* Add-ons more on radius for the border */
+  border-radius: 8px;
+
+  /* Setup the color for the background and text */
+  color: white;
+  background: #002aa2;
+
+  /* Customize the font size */
+  font-size: 1.2rem;
+
+  /* Customize the cursor to the pointer cursor */
+  cursor: pointer;
+
+  /* Add-ons transition */
+  transition: background 0.2s;
+}
+
+/* Customize the style of button hover */
+.container > button:hover {
+  background: #185abd;
+}
+
+.container > .result {
+  /* Customize the margin and height */
+  margin-top: 2rem;
+  min-height: 2rem;
+
+  /* Customize the font size and color of text */
+  font-size: 3rem;
+  color: #333;
+
+  /* Add-ons the transition */
+  transition: color 0.3s;
+}
+
+/* Customize the style of loading */
+.container > .loading {
+  color: #2d89ef;
+  font-style: italic;
+  letter-spacing: 2px;
+}
